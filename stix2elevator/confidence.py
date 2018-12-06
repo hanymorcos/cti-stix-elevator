@@ -90,7 +90,7 @@ def convert_confidence_value(value, id):
                  value, id)
             confidentiality2_1_value = ceil(value)
     elif isinstance(value, str):
-        if value.isnumeric():
+        if value.isdigit():
             confidentiality2_1_value = convert_confidence_value(convert_numeric_string(value), id)
         else:
             confidentiality2_1_value = convert_confidence_string(value)

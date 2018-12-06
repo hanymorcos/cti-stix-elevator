@@ -34,7 +34,8 @@ setup(
     maintainer_email='rpiazza@mitre.org',
     packages=find_packages(),
     install_requires=[
-        'pycountry>=1.17.8',
+        'maec>=4.1.0.14',
+        'pycountry>=18.5.26',
         'stix>=1.1.1.9,<1.2.1.0',
         'stix2-validator>=1.0.1',
         'stixmarx>=1.0.3',

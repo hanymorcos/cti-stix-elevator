@@ -835,7 +835,7 @@ _LOCATIONS = {}
 def determine_country_code(value):
     try:
         iso = pycountry.countries.get(name=value)
-        return iso.alpha2
+        return iso.alpha_2
     except KeyError:
         warn("No ISO code for %s, therefore full name", 618, value)
         return value
